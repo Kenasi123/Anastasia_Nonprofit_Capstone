@@ -25,7 +25,7 @@ return (
 		<Column>
 			<Heading>About Us</Heading>
 			<FooterLink href="Mission">Misson/Vision</FooterLink>
-			<FooterLink href="image0.jpeg">Testimonials</FooterLink>
+			<FooterLink href="">Testimonials</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Services</Heading>

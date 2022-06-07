@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 
 import { useWindupString } from "windups";
 
+
+
 const Testimonials = () => {
 
     const [currentTestimonial] = useWindupString(
-        "Satisfying food that's feed your soul with great company", {
+        "Satisfying food that feeds your soul with great company", {
             pace: () => 100
 
         }

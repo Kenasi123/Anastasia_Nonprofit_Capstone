@@ -8,7 +8,7 @@ import FormSignup from '../FormSignup'
 import Mission from '../Testimonials/Mission.js'
 import Footer from '../Footer/Footer'
 import Form from '../Form'
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route , Link } from 'react-router-dom';
 import Holder from '../Holder';
 
 
@@ -21,15 +21,25 @@ const Home = () => {
         <Navbar />
         <Routes>
 
-          <Route path ="/" element={<HeroSection/>}/>
+          <Route path ="/" element={<HeroSection/>}>
 
-          <Route path ="/signup" element={<Form/>}/>
+          </Route>
 
-          <Route path ="/gallery" element={<Holder/>}/>
+          <Route path ="/signup" element={<Form/>}>
 
-          <Route path ="/mission" element={<Mission/>}/>
+          </Route>
 
-          <Route path ="*" element={<HeroSection/>}/>
+          <Route path ="/gallery" element={<Holder/>}>
+
+          </Route>
+
+          <Route path ="/mission" element={<Mission/>}>
+
+          </Route>
+
+          <Route path ="*" element={<HeroSection/>}>
+
+          </Route>
 
         </Routes>
        

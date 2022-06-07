@@ -3,12 +3,26 @@ import validate from './validateInfo';
 import useForm from './useForm';
 import './Form.css';
 
+
 const FormSignup = ({ submitForm }) => {
   const { handleChange, handleSubmit, values, errors } = useForm(
     submitForm,
     validate
   );
+  // state = {
+  //   text: {
+  //     recipient: '',
+  //   }
+  // }
 
+  // const sendText = () => {
+  //   const { text } = this.state;
+  //   //pass text message GET variables via query string
+  //   fetch(`http://127.0.0.1:3000/signup?recipient=${text.recipient}`)
+  //   .catch(err => console.error(err))
+  // }
+
+  
   return (
     <div className='form-content-right'>
       <form onSubmit={handleSubmit} className='form' noValidate>
@@ -57,8 +71,7 @@ const FormSignup = ({ submitForm }) => {
             name='phonenumber'
             placeholder='Please enter your phone number'
             value={values.phonenumber}
-            onChange={handleChange}
-          />
+            onChange={handleChange} />
           {errors.phonenumber && <p>{errors.phonenumber}</p>}
         </div>
         <button className='form-input-btn' type='submit'>
@@ -69,7 +82,8 @@ const FormSignup = ({ submitForm }) => {
         </span> */}
       </form>
     </div>
-  );
+  )
+      
 };
 
 export default FormSignup;
