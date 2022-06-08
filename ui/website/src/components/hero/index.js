@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import Video from './video/bg-hero.mp4'
+import Video from './video/newVid.mp4'
 import { Button } from '../ButtonElement'
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElement'
 const HeroSection = () => { 
@@ -14,7 +14,7 @@ const HeroSection = () => {
             <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
         </HeroBg>
         <HeroContent>
-            <HeroH1>100% Online Culinary Education</HeroH1>
+            <HeroH1>Culinary Education</HeroH1>
             <HeroP>
                 Sign Up for a Class Today 
             </HeroP>
